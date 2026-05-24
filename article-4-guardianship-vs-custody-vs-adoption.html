@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guardianship vs. Custody vs. Adoption: Which Is Right for Your Family? | GrandFamily Guides</title>
+<meta name="description" content="Guardianship, custody, and adoption each have very different legal implications, costs, and effects on benefits. This plain-English guide helps you decide which path is right for your family.">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #c8622a; --amber-light: #e8834a; --amber-pale: #fdf0e8;
+    --navy: #1c2b4a; --navy-light: #2e4370; --sky: #e8f2fb;
+    --teal: #2a7a6f; --cream: #faf7f2; --text: #1a1a2e;
+    --muted: #6b7280; --border: rgba(28,43,74,0.1); --radius: 16px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+  nav { background: var(--navy); padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .nav-logo { font-family: 'Lora', serif; font-size: 1.2rem; font-weight: 700; color: white; text-decoration: none; }
+  .nav-logo span { color: var(--amber-light); }
+  .nav-back { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+  .nav-back:hover { color: white; }
+
+  .article-hero { background: linear-gradient(135deg, #2a1a3a 0%, #4a2a6a 100%); padding: 64px 32px; position: relative; overflow: hidden; }
+  .article-hero::after { content: '⚖️'; position: absolute; right: 5%; bottom: -20px; font-size: 10rem; opacity: 0.06; }
+  .hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
+  .article-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(200,98,42,0.2); color: var(--amber-light); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; border: 1px solid rgba(200,98,42,0.3); margin-bottom: 20px; }
+  .article-hero h1 { font-family: 'Lora', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: white; line-height: 1.25; margin-bottom: 18px; }
+  .article-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 28px; max-width: 620px; }
+  .article-meta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .meta-item { font-size: 0.82rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+
+  .article-layout { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 56px 32px; align-items: start; }
+  .article-body { min-width: 0; }
+  .intro-box { background: var(--amber-pale); border-left: 4px solid var(--amber); border-radius: 0 var(--radius) var(--radius) 0; padding: 24px 28px; margin-bottom: 40px; }
+  .intro-box p { font-family: 'Lora', serif; font-style: italic; font-size: 1.05rem; color: var(--navy); line-height: 1.75; }
+  .article-body h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); margin: 48px 0 16px; }
+  .article-body h3 { font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin: 28px 0 10px; }
+  .article-body p { font-size: 1rem; color: #3a3a5c; line-height: 1.8; margin-bottom: 18px; }
+  .article-body strong { color: var(--navy); font-weight: 700; }
+  .article-body ul { margin: 0 0 18px 20px; }
+  .article-body ul li { font-size: 1rem; color: #3a3a5c; line-height: 1.8; margin-bottom: 8px; }
+
+  /* OPTION CARDS */
+  .option-card { background: white; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; margin-bottom: 28px; }
+  .option-header { padding: 24px 28px; display: flex; align-items: flex-start; gap: 16px; }
+  .option-icon { font-size: 2.2rem; flex-shrink: 0; }
+  .option-header-text { flex: 1; }
+  .option-name { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .option-tagline { font-size: 0.88rem; color: var(--muted); }
+  .option-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .badge { font-size: 0.72rem; font-weight: 800; padding: 4px 12px; border-radius: 50px; }
+  .badge-green { background: rgba(42,122,111,0.1); color: var(--teal); }
+  .badge-amber { background: var(--amber-pale); color: var(--amber); }
+  .badge-navy { background: rgba(28,43,74,0.08); color: var(--navy); }
+  .option-body { padding: 0 28px 28px; }
+  .option-body p { font-size: 0.92rem; color: #3a3a5c; line-height: 1.75; margin-bottom: 14px; }
+
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+  .pros, .cons { border-radius: 12px; padding: 16px; }
+  .pros { background: rgba(42,122,111,0.07); }
+  .cons { background: rgba(200,98,42,0.07); }
+  .pc-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+  .pros .pc-label { color: var(--teal); }
+  .cons .pc-label { color: var(--amber); }
+  .pc-item { font-size: 0.84rem; color: #3a3a5c; margin-bottom: 6px; display: flex; gap: 6px; line-height: 1.5; }
+  .pc-item::before { font-weight: 800; flex-shrink: 0; }
+  .pros .pc-item::before { content: '✓'; color: var(--teal); }
+  .cons .pc-item::before { content: '✗'; color: var(--amber); }
+
+  .option-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+  .opt-detail { background: var(--cream); border-radius: 10px; padding: 12px; }
+  .opt-detail-label { font-size: 0.68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .opt-detail-val { font-size: 0.86rem; font-weight: 700; color: var(--navy); line-height: 1.4; }
+
+  /* COMPARISON TABLE */
+  .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; }
+  .compare-table th { background: var(--navy); color: white; padding: 14px 16px; text-align: left; font-size: 0.8rem; font-weight: 800; }
+  .compare-table th:first-child { width: 32%; }
+  .compare-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: #3a3a5c; vertical-align: top; line-height: 1.6; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:nth-child(even) td { background: rgba(28,43,74,0.02); }
+  .compare-table .row-label { font-weight: 800; color: var(--navy); }
+  .good { color: var(--teal); font-weight: 700; }
+  .neutral { color: var(--amber); font-weight: 700; }
+  .caution { color: #c0392b; font-weight: 700; }
+
+  /* DECISION TREE */
+  .decision-box { background: var(--navy); border-radius: var(--radius); padding: 28px; margin: 36px 0; }
+  .decision-box h3 { font-family: 'Lora', serif; font-size: 1.2rem; font-weight: 700; color: white; margin-bottom: 20px; }
+  .decision-item { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 14px; border: 1px solid rgba(255,255,255,0.08); }
+  .decision-item:last-child { margin-bottom: 0; }
+  .decision-if { font-size: 0.72rem; font-weight: 800; color: var(--amber-light); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .decision-then { font-size: 0.9rem; color: white; font-weight: 700; margin-bottom: 4px; }
+  .decision-why { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+  .decision-arrow { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+
+  .info-box { border-radius: var(--radius); padding: 22px 26px; margin: 32px 0; }
+  .info-box.tip { background: rgba(42,122,111,0.08); border-left: 4px solid var(--teal); }
+  .info-box.warning { background: rgba(200,98,42,0.08); border-left: 4px solid var(--amber); }
+  .info-box.important { background: var(--sky); border-left: 4px solid var(--navy); }
+  .info-box-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+  .tip .info-box-label { color: var(--teal); }
+  .warning .info-box-label { color: var(--amber); }
+  .important .info-box-label { color: var(--navy); }
+  .info-box p { font-size: 0.92rem; color: var(--navy); line-height: 1.7; margin: 0; }
+
+  .sidebar { position: sticky; top: 80px; }
+  .sidebar-card { background: white; border-radius: var(--radius); border: 1px solid var(--border); padding: 24px; margin-bottom: 20px; }
+  .sidebar-card h4 { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  .toc-link { display: block; font-size: 0.84rem; color: var(--muted); text-decoration: none; padding: 5px 0; font-weight: 600; border-left: 2px solid transparent; padding-left: 10px; transition: all 0.2s; }
+  .toc-link:hover { color: var(--amber); border-left-color: var(--amber); }
+  .resource-link { display: flex; align-items: center; gap: 8px; font-size: 0.84rem; color: var(--navy); text-decoration: none; padding: 9px 0; border-bottom: 1px solid var(--border); font-weight: 600; transition: color 0.2s; }
+  .resource-link:last-child { border-bottom: none; }
+  .resource-link:hover { color: var(--amber); }
+
+  .quick-compare { background: var(--amber-pale); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; }
+  .quick-compare h4 { font-family: 'Lora', serif; font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+  .qc-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid rgba(200,98,42,0.15); font-size: 0.82rem; }
+  .qc-row:last-child { border-bottom: none; }
+  .qc-label { color: var(--muted); font-weight: 600; }
+  .qc-val { font-weight: 800; color: var(--navy); }
+
+  .newsletter-card { background: var(--navy); border-radius: var(--radius); padding: 24px; }
+  .newsletter-card h4 { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: white; margin-bottom: 8px; }
+  .newsletter-card p { font-size: 0.82rem; color: rgba(255,255,255,0.55); margin-bottom: 16px; line-height: 1.6; }
+  .newsletter-card input { width: 100%; padding: 10px 14px; border-radius: 10px; border: none; font-family: 'Nunito', sans-serif; font-size: 0.88rem; margin-bottom: 10px; outline: none; }
+  .newsletter-card button { width: 100%; padding: 11px; border-radius: 10px; background: var(--amber); color: white; border: none; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.9rem; cursor: pointer; }
+  .newsletter-card button:hover { background: var(--amber-light); }
+
+  .related-section { max-width: 1100px; margin: 0 auto; padding: 0 32px 64px; }
+  .related-section h2 { font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 24px; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card { background: white; border-radius: var(--radius); padding: 22px; border: 1px solid var(--border); text-decoration: none; transition: all 0.2s; display: block; }
+  .related-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(28,43,74,0.1); }
+  .related-tag { font-size: 0.72rem; font-weight: 800; color: var(--amber); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .related-card h3 { font-family: 'Lora', serif; font-size: 0.98rem; font-weight: 700; color: var(--navy); line-height: 1.4; margin-bottom: 8px; }
+  .related-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
+
+  footer { background: var(--navy); padding: 32px; text-align: center; }
+  footer p { color: rgba(255,255,255,0.4); font-size: 0.82rem; }
+  footer a { color: var(--amber-light); text-decoration: none; }
+
+  @media (max-width: 860px) {
+    .article-layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .related-grid { grid-template-columns: 1fr; }
+    .pros-cons { grid-template-columns: 1fr; }
+    .option-details { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Grand<span>Family</span> Guides</a>
+  <a href="index.html" class="nav-back">← Back to all resources</a>
+</nav>
+
+<div class="article-hero">
+  <div class="hero-inner">
+    <div class="article-tag">⚖️ Legal Guide</div>
+    <h1>Guardianship vs. Custody vs. Adoption: Which Is Right for Your Family?</h1>
+    <p>Each option has very different legal implications, costs, time requirements, and effects on benefits. This plain-English guide walks you through all three so you can make the right decision for your family — without a lawyer visit first.</p>
+    <div class="article-meta">
+      <div class="meta-item">🕐 11 min read</div>
+      <div class="meta-item">📅 Updated May 2026</div>
+      <div class="meta-item">⚖️ 3 options fully compared</div>
+      <div class="meta-item">🗺️ All 50 states</div>
+    </div>
+  </div>
+</div>
+
+<div class="article-layout">
+  <article class="article-body">
+
+    <div class="intro-box">
+      <p>"The three most common questions we hear from grandparent caregivers are: Do I need guardianship? Should I get custody? Should I adopt? The answer depends entirely on your situation — and getting it right matters enormously for your benefits, your rights, and your grandchild's future."</p>
+    </div>
+
+    <p>When you become a grandchild's caregiver, one of the biggest decisions you'll face is what legal arrangement to pursue. Each option — guardianship, custody, and adoption — gives you different rights, involves different costs, takes different amounts of time, and affects your access to benefits in very different ways.</p>
+
+    <p>Most grandparents start with no formal legal arrangement and a Power of Attorney or Caregiver Affidavit. That works for the short term. But as time goes on, a more permanent arrangement is usually in everyone's best interest. This guide explains each option clearly so you can make an informed decision.</p>
+
+    <div class="info-box warning">
+      <div class="info-box-label">⚠️ Important Disclaimer</div>
+      <p>This guide provides general information only — not legal advice. Every state has different laws, and every family situation is unique. Always consult a licensed attorney in your state before making any legal decisions. Many offer free consultations for kinship caregivers, and free legal aid may be available to you.</p>
+    </div>
+
+    <h2 id="guardianship">Option 1: Legal Guardianship</h2>
+    <p>For most grandparent caregivers, <strong>legal guardianship is the best starting point</strong>. It gives you broad authority to make decisions for your grandchild while preserving the parents' legal rights — which matters both emotionally and legally in many situations.</p>
+
+    <div class="option-card">
+      <div class="option-header">
+        <div class="option-icon">🛡️</div>
+        <div class="option-header-text">
+          <div class="option-name">Legal Guardianship</div>
+          <div class="option-tagline">Court-appointed authority to care for and make decisions for the child</div>
+          <div class="option-badges">
+            <span class="badge badge-green">Most Common Choice</span>
+            <span class="badge badge-amber">Reversible</span>
+            <span class="badge badge-navy">Preserves Parental Rights</span>
+          </div>
+        </div>
+      </div>
+      <div class="option-body">
+        <p>Legal guardianship gives you the court-recognized authority to make all major decisions for your grandchild — medical, educational, and personal — without terminating the parents' legal rights. The parents retain the right to visit and, in some cases, to eventually regain custody if circumstances change.</p>
+        <p>Guardianship is established through the court system but is generally faster and less expensive than adoption. It can often be obtained in 60–120 days and, with free legal aid, at little or no cost to you.</p>
+
+        <div class="option-details">
+          <div class="opt-detail">
+            <div class="opt-detail-label">Typical Cost</div>
+            <div class="opt-detail-val">$0–$2,000 (free with legal aid)</div>
+          </div>
+          <div class="opt-detail">
+            <div class="opt-detail-label">Timeline</div>
+            <div class="opt-detail-val">60–120 days from filing</div>
+          </div>
+          <div class="opt-detail">
+            <div class="opt-detail-label">Parental Rights</div>
+            <div class="opt-detail-val">Preserved — parents can still visit</div>
+          </div>
+        </div>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pc-label">✓ Advantages</div>
+            <div class="pc-item">Full decision-making authority</div>
+            <div class="pc-item">Unlocks kinship stipends and benefits</div>
+            <div class="pc-item">Faster and cheaper than adoption</div>
+            <div class="pc-item">Reversible if parents recover</div>
+            <div class="pc-item">Free legal aid widely available</div>
+            <div class="pc-item">Child keeps their original name</div>
+          </div>
+          <div class="cons">
+            <div class="pc-label">✗ Limitations</div>
+            <div class="pc-item">Parents can petition to regain custody</div>
+            <div class="pc-item">Requires periodic court review</div>
+            <div class="pc-item">Less permanent than adoption</div>
+            <div class="pc-item">Parents still have visitation rights</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="custody">Option 2: Physical or Legal Custody</h2>
+    <p>Custody arrangements are typically established as part of a family court proceeding and focus specifically on where the child lives and who makes decisions — without the full framework of a guardianship proceeding.</p>
+
+    <div class="option-card">
+      <div class="option-header">
+        <div class="option-icon">🏠</div>
+        <div class="option-header-text">
+          <div class="option-name">Physical & Legal Custody</div>
+          <div class="option-tagline">Court-ordered arrangement defining where the child lives and who decides</div>
+          <div class="option-badges">
+            <span class="badge badge-amber">Situation-Dependent</span>
+            <span class="badge badge-navy">Two Types</span>
+          </div>
+        </div>
+      </div>
+      <div class="option-body">
+        <p><strong>Physical custody</strong> means the child lives with you. <strong>Legal custody</strong> means you have the right to make decisions about the child's education, healthcare, and welfare. You can have one or both.</p>
+        <p>Grandparent custody arrangements are typically used when there is an existing court case — a divorce, abuse proceeding, or child welfare case — and the judge awards custody to the grandparent as part of that proceeding. It is less commonly pursued independently.</p>
+
+        <div class="option-details">
+          <div class="opt-detail">
+            <div class="opt-detail-label">Typical Cost</div>
+            <div class="opt-detail-val">$1,500–$5,000+</div>
+          </div>
+          <div class="opt-detail">
+            <div class="opt-detail-label">Timeline</div>
+            <div class="opt-detail-val">Varies widely by case</div>
+          </div>
+          <div class="opt-detail">
+            <div class="opt-detail-label">Parental Rights</div>
+            <div class="opt-detail-val">Preserved but limited</div>
+          </div>
+        </div>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pc-label">✓ Advantages</div>
+            <div class="pc-item">Can be part of existing court case</div>
+            <div class="pc-item">Clearly defines living arrangements</div>
+            <div class="pc-item">Can include child support orders</div>
+            <div class="pc-item">Allows parental involvement if healthy</div>
+          </div>
+          <div class="cons">
+            <div class="pc-label">✗ Limitations</div>
+            <div class="pc-item">Fewer benefits than guardianship</div>
+            <div class="pc-item">Can be modified by parents more easily</div>
+            <div class="pc-item">Less stable long-term</div>
+            <div class="pc-item">May require ongoing court involvement</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="adoption">Option 3: Adoption</h2>
+    <p>Adoption is the most permanent option and creates a full legal parent-child relationship between you and your grandchild. It is the right choice in some situations — but it is irreversible and has significant implications for benefits and family relationships.</p>
+
+    <div class="option-card">
+      <div class="option-header">
+        <div class="option-icon">❤️</div>
+        <div class="option-header-text">
+          <div class="option-name">Adoption</div>
+          <div class="option-tagline">Permanent legal parent-child relationship — parental rights terminated</div>
+          <div class="option-badges">
+            <span class="badge badge-navy">Most Permanent</span>
+            <span class="badge badge-amber">Irreversible</span>
+            <span class="badge badge-green">Terminates Parental Rights</span>
+          </div>
+        </div>
+      </div>
+      <div class="option-body">
+        <p>When you adopt your grandchild, you legally become their parent. The biological parents' rights are permanently terminated — they no longer have legal standing to visit or petition for custody. Your grandchild may take your last name, and they inherit from your estate as a child.</p>
+        <p>Adoption is typically pursued when the parents are deceased, have had their rights terminated by the court, or have willingly consented to the adoption. It provides the greatest legal security for the child but is a significant, permanent step.</p>
+
+        <div class="option-details">
+          <div class="opt-detail">
+            <div class="opt-detail-label">Typical Cost</div>
+            <div class="opt-detail-val">$2,500–$8,000 (subsidized if from foster care)</div>
+          </div>
+          <div class="opt-detail">
+            <div class="opt-detail-label">Timeline</div>
+            <div class="opt-detail-val">6–18 months typically</div>
+          </div>
+          <div class="opt-detail">
+            <div class="opt-detail-label">Parental Rights</div>
+            <div class="opt-detail-val">Permanently terminated</div>
+          </div>
+        </div>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pc-label">✓ Advantages</div>
+            <div class="pc-item">Maximum legal permanency and security</div>
+            <div class="pc-item">Child inherits as your legal child</div>
+            <div class="pc-item">No risk of parental interference</div>
+            <div class="pc-item">Adoption subsidy may be available</div>
+            <div class="pc-item">Adoption tax credit up to $15,950</div>
+            <div class="pc-item">Emotionally affirming for the child</div>
+          </div>
+          <div class="cons">
+            <div class="pc-label">✗ Limitations</div>
+            <div class="pc-item">Permanently ends parental rights</div>
+            <div class="pc-item">More expensive and time-consuming</div>
+            <div class="pc-item">May affect child's benefits (SSI, etc.)</div>
+            <div class="pc-item">Emotionally complex for all parties</div>
+            <div class="pc-item">Cannot be undone</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="comparison">Side-by-Side Comparison</h2>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Factor</th>
+          <th>Guardianship</th>
+          <th>Custody</th>
+          <th>Adoption</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label">Parental rights</td>
+          <td>Preserved</td>
+          <td>Preserved but limited</td>
+          <td class="caution">Terminated permanently</td>
+        </tr>
+        <tr>
+          <td class="row-label">Reversibility</td>
+          <td class="good">Yes — can be modified</td>
+          <td class="good">Yes — can be modified</td>
+          <td class="caution">No — permanent</td>
+        </tr>
+        <tr>
+          <td class="row-label">Decision-making authority</td>
+          <td class="good">Full authority</td>
+          <td class="good">Full (legal custody)</td>
+          <td class="good">Full authority</td>
+        </tr>
+        <tr>
+          <td class="row-label">Kinship stipend eligibility</td>
+          <td class="good">Yes — most states</td>
+          <td class="neutral">Varies by state</td>
+          <td class="neutral">May change benefits</td>
+        </tr>
+        <tr>
+          <td class="row-label">Typical cost</td>
+          <td class="good">$0–$2,000</td>
+          <td class="neutral">$1,500–$5,000+</td>
+          <td class="caution">$2,500–$8,000+</td>
+        </tr>
+        <tr>
+          <td class="row-label">Timeline</td>
+          <td class="good">60–120 days</td>
+          <td class="neutral">Varies</td>
+          <td class="caution">6–18 months</td>
+        </tr>
+        <tr>
+          <td class="row-label">Free legal aid available</td>
+          <td class="good">Widely available</td>
+          <td class="neutral">Some availability</td>
+          <td class="neutral">Limited availability</td>
+        </tr>
+        <tr>
+          <td class="row-label">Child's last name</td>
+          <td>Unchanged</td>
+          <td>Unchanged</td>
+          <td class="neutral">Can be changed</td>
+        </tr>
+        <tr>
+          <td class="row-label">Inheritance rights</td>
+          <td>Not automatic</td>
+          <td>Not automatic</td>
+          <td class="good">Full inheritance rights</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="decision">Which Option Is Right for You?</h2>
+
+    <div class="decision-box">
+      <h3>Use This Guide to Find Your Path</h3>
+
+      <div class="decision-item">
+        <div class="decision-arrow">🔵</div>
+        <div>
+          <div class="decision-if">If the situation might be temporary</div>
+          <div class="decision-then">Start with Guardianship</div>
+          <div class="decision-why">If there's any chance the parents may recover and reunite with the child, guardianship preserves that possibility while protecting the child now.</div>
+        </div>
+      </div>
+
+      <div class="decision-item">
+        <div class="decision-arrow">🟠</div>
+        <div>
+          <div class="decision-if">If you're in an existing court case</div>
+          <div class="decision-then">Consider Custody as part of that proceeding</div>
+          <div class="decision-why">If there's already a family court case open — divorce, abuse, neglect — ask the judge to award you custody as part of that proceeding. It may be faster than opening a new guardianship case.</div>
+        </div>
+      </div>
+
+      <div class="decision-item">
+        <div class="decision-arrow">🟢</div>
+        <div>
+          <div class="decision-if">If parents are deceased or rights have been terminated</div>
+          <div class="decision-then">Adoption may be the right choice</div>
+          <div class="decision-why">When there's no possibility of parental reunification, adoption provides the greatest legal security and emotional permanency for the child. The Adoption Tax Credit can offset costs significantly.</div>
+        </div>
+      </div>
+
+      <div class="decision-item">
+        <div class="decision-arrow">🟣</div>
+        <div>
+          <div class="decision-if">If you need something right now while you decide</div>
+          <div class="decision-then">Get a Caregiver Affidavit immediately</div>
+          <div class="decision-why">A notarized Caregiver Affidavit takes a few hours and costs nothing. It covers most day-to-day decisions and buys you time to make the right long-term legal choice without rushing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box tip">
+      <div class="info-box-label">💡 Our Recommendation for Most Families</div>
+      <p>For most grandparent caregivers, <strong>legal guardianship is the right first step</strong>. It is faster, cheaper, and more reversible than adoption, and it unlocks most of the benefits available to kinship families. Start there, and revisit the question of adoption later once the situation stabilizes and you've had time to consult with an attorney.</p>
+    </div>
+
+    <div class="info-box important">
+      <div class="info-box-label">📞 Get Free Legal Help</div>
+      <p>Before making any legal decision, speak with a kinship care attorney. Call <strong>1-800-677-1116</strong> (Eldercare Locator) to be connected with free legal aid in your area, or visit <strong>lawhelp.org</strong> to find your state's legal aid organization.</p>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="quick-compare">
+      <h4>⚡ Quick Comparison</h4>
+      <div class="qc-row"><span class="qc-label">Fastest</span><span class="qc-val">Guardianship</span></div>
+      <div class="qc-row"><span class="qc-label">Cheapest</span><span class="qc-val">Guardianship</span></div>
+      <div class="qc-row"><span class="qc-label">Most permanent</span><span class="qc-val">Adoption</span></div>
+      <div class="qc-row"><span class="qc-label">Most reversible</span><span class="qc-val">Custody</span></div>
+      <div class="qc-row"><span class="qc-label">Best for benefits</span><span class="qc-val">Guardianship</span></div>
+      <div class="qc-row"><span class="qc-label">Most legal security</span><span class="qc-val">Adoption</span></div>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>📋 In This Guide</h4>
+      <a href="#guardianship" class="toc-link">Option 1: Guardianship</a>
+      <a href="#custody" class="toc-link">Option 2: Custody</a>
+      <a href="#adoption" class="toc-link">Option 3: Adoption</a>
+      <a href="#comparison" class="toc-link">Side-by-Side Comparison</a>
+      <a href="#decision" class="toc-link">Which Is Right for You?</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>🔗 Get Legal Help</h4>
+      <a href="#" class="resource-link"><span>⚖️</span> Find Free Legal Aid</a>
+      <a href="#" class="resource-link"><span>📞</span> Eldercare Locator: 1-800-677-1116</a>
+      <a href="#" class="resource-link"><span>🤝</span> Find a Kinship Navigator</a>
+      <a href="#" class="resource-link"><span>📄</span> Download Caregiver Affidavit</a>
+    </div>
+
+    <div class="newsletter-card">
+      <h4>🌻 GrandFamily Weekly</h4>
+      <p>One benefit, one tip, one story — every week. Free forever.</p>
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe Free</button>
+    </div>
+  </aside>
+</div>
+
+<!-- RELATED -->
+<div class="related-section">
+  <h2>Continue Reading</h2>
+  <div class="related-grid">
+    <a href="article-1-kinship-caregiver-checklist.html" class="related-card">
+      <div class="related-tag">📋 Essential Guide</div>
+      <h3>The Complete New Kinship Caregiver Checklist: Your First 30 Days</h3>
+      <p>Everything you need to do when you first become a caregiver, in the right order.</p>
+    </a>
+    <a href="article-2-benefits-guide.html" class="related-card">
+      <div class="related-tag">💰 Financial Aid</div>
+      <h3>$9,000+ in Benefits Grandparent Caregivers Should Be Claiming</h3>
+      <p>Most grandparents qualify for thousands in assistance they never claim.</p>
+    </a>
+    <a href="article-3-school-enrollment.html" class="related-card">
+      <div class="related-tag">🎒 School</div>
+      <h3>How to Enroll Your Grandchild in School Without Legal Custody</h3>
+      <p>Federal law protects your grandchild's right to enroll immediately.</p>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="index.html">GrandFamily Guides</a> · grandfamilyguides.com · Not legal advice. Always consult a licensed attorney for your specific situation.</p>
+</footer>
+
+<script>
+  document.querySelector('.newsletter-card button').addEventListener('click', function() {
+    const email = document.querySelector('.newsletter-card input').value;
+    if (email && email.includes('@')) {
+      alert('You\'re subscribed! Welcome to GrandFamily Weekly.');
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  });
+</script>
+
+</body>
+</html>
