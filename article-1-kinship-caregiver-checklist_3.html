@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete New Kinship Caregiver Checklist | GrandFamily Guides</title>
+<meta name="description" content="Just became responsible for a grandchild? This step-by-step checklist walks you through the first 30 days — from emergency school enrollment to financial assistance.">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #c8622a;
+    --amber-light: #e8834a;
+    --amber-pale: #fdf0e8;
+    --navy: #1c2b4a;
+    --navy-light: #2e4370;
+    --sky: #e8f2fb;
+    --teal: #2a7a6f;
+    --cream: #faf7f2;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: rgba(28,43,74,0.1);
+    --radius: 16px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+  /* NAV */
+  nav {
+    background: var(--navy); padding: 0 32px; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo { font-family: 'Lora', serif; font-size: 1.2rem; font-weight: 700; color: white; text-decoration: none; }
+  .nav-logo span { color: var(--amber-light); }
+  .nav-back { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+  .nav-back:hover { color: white; }
+
+  /* HERO */
+  .article-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 64px 32px;
+    position: relative; overflow: hidden;
+  }
+  .article-hero::after {
+    content: '🌻'; position: absolute;
+    right: 5%; bottom: -20px; font-size: 10rem; opacity: 0.06;
+  }
+  .hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
+  .article-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(200,98,42,0.2); color: var(--amber-light);
+    font-size: 0.75rem; font-weight: 800; letter-spacing: 0.8px;
+    text-transform: uppercase; padding: 5px 14px; border-radius: 50px;
+    border: 1px solid rgba(200,98,42,0.3); margin-bottom: 20px;
+  }
+  .article-hero h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700; color: white; line-height: 1.25;
+    margin-bottom: 18px;
+  }
+  .article-hero p {
+    font-size: 1.05rem; color: rgba(255,255,255,0.65);
+    line-height: 1.75; margin-bottom: 28px; max-width: 620px;
+  }
+  .article-meta {
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  }
+  .meta-item { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+
+  /* LAYOUT */
+  .article-layout {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 300px; gap: 48px;
+    padding: 56px 32px;
+    align-items: start;
+  }
+
+  /* ARTICLE BODY */
+  .article-body { min-width: 0; }
+
+  .intro-box {
+    background: var(--amber-pale); border-left: 4px solid var(--amber);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 24px 28px; margin-bottom: 40px;
+  }
+  .intro-box p {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 1.05rem; color: var(--navy); line-height: 1.75;
+  }
+
+  .article-body h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem; font-weight: 700; color: var(--navy);
+    margin: 48px 0 16px; line-height: 1.3;
+  }
+  .article-body h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem; font-weight: 700; color: var(--navy);
+    margin: 32px 0 12px;
+  }
+  .article-body p {
+    font-size: 1rem; color: #3a3a5c; line-height: 1.8;
+    margin-bottom: 18px;
+  }
+  .article-body strong { color: var(--navy); font-weight: 700; }
+
+  /* CHECKLIST SECTIONS */
+  .phase-header {
+    background: var(--navy);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 18px 24px;
+    display: flex; align-items: center; gap: 14px;
+    margin-top: 40px;
+  }
+  .phase-num {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--amber); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.9rem; flex-shrink: 0;
+  }
+  .phase-title { color: white; font-weight: 800; font-size: 1rem; }
+  .phase-subtitle { color: rgba(255,255,255,0.55); font-size: 0.82rem; margin-top: 2px; }
+
+  .checklist-group {
+    background: white; border: 1px solid var(--border);
+    border-top: none; border-radius: 0 0 var(--radius) var(--radius);
+    overflow: hidden; margin-bottom: 8px;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 16px;
+    padding: 18px 24px; border-bottom: 1px solid rgba(28,43,74,0.06);
+    cursor: pointer; transition: background 0.15s;
+  }
+  .checklist-item:last-child { border-bottom: none; }
+  .checklist-item:hover { background: var(--amber-pale); }
+  .checklist-item.checked { background: rgba(42,122,111,0.05); }
+  .check-box {
+    width: 22px; height: 22px; border-radius: 6px;
+    border: 2px solid var(--border); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s; margin-top: 2px;
+    background: white;
+  }
+  .checklist-item.checked .check-box {
+    background: var(--teal); border-color: var(--teal);
+  }
+  .check-mark { display: none; color: white; font-size: 14px; font-weight: 800; }
+  .checklist-item.checked .check-mark { display: block; }
+  .check-content { flex: 1; }
+  .check-title {
+    font-weight: 700; font-size: 0.95rem; color: var(--navy);
+    margin-bottom: 4px; line-height: 1.4;
+  }
+  .checklist-item.checked .check-title {
+    text-decoration: line-through; color: var(--muted);
+  }
+  .check-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
+  .check-tag {
+    flex-shrink: 0; font-size: 0.7rem; font-weight: 800;
+    padding: 3px 10px; border-radius: 50px; white-space: nowrap;
+    margin-top: 3px;
+  }
+  .tag-urgent { background: rgba(200,98,42,0.1); color: var(--amber); }
+  .tag-soon { background: rgba(28,43,74,0.08); color: var(--navy); }
+  .tag-ongoing { background: rgba(42,122,111,0.1); color: var(--teal); }
+
+  /* PROGRESS BAR */
+  .progress-wrap {
+    background: white; border-radius: var(--radius);
+    padding: 20px 24px; margin-bottom: 32px;
+    border: 1px solid var(--border);
+    position: sticky; top: 72px; z-index: 10;
+  }
+  .progress-label {
+    display: flex; justify-content: space-between;
+    font-size: 0.82rem; font-weight: 700; color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .progress-bar-bg {
+    background: var(--amber-pale); border-radius: 50px; height: 10px; overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%; border-radius: 50px;
+    background: linear-gradient(90deg, var(--amber), var(--amber-light));
+    transition: width 0.4s ease; width: 0%;
+  }
+  .progress-note { font-size: 0.78rem; color: var(--muted); margin-top: 8px; }
+
+  /* INFO BOXES */
+  .info-box {
+    border-radius: var(--radius); padding: 22px 26px; margin: 32px 0;
+  }
+  .info-box.tip { background: rgba(42,122,111,0.08); border-left: 4px solid var(--teal); }
+  .info-box.warning { background: rgba(200,98,42,0.08); border-left: 4px solid var(--amber); }
+  .info-box.important { background: var(--sky); border-left: 4px solid var(--navy); }
+  .info-box-label {
+    font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.8px; margin-bottom: 8px;
+  }
+  .tip .info-box-label { color: var(--teal); }
+  .warning .info-box-label { color: var(--amber); }
+  .important .info-box-label { color: var(--navy); }
+  .info-box p { font-size: 0.92rem; color: var(--navy); line-height: 1.7; margin: 0; }
+
+  /* SIDEBAR */
+  .sidebar { position: sticky; top: 80px; }
+  .sidebar-card {
+    background: white; border-radius: var(--radius);
+    border: 1px solid var(--border); padding: 24px;
+    margin-bottom: 20px;
+  }
+  .sidebar-card h4 {
+    font-family: 'Lora', serif; font-size: 1rem; font-weight: 700;
+    color: var(--navy); margin-bottom: 14px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  }
+  .toc-link {
+    display: block; font-size: 0.84rem; color: var(--muted);
+    text-decoration: none; padding: 5px 0; font-weight: 600;
+    border-left: 2px solid transparent; padding-left: 10px;
+    transition: all 0.2s;
+  }
+  .toc-link:hover { color: var(--amber); border-left-color: var(--amber); }
+  .resource-link {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.84rem; color: var(--navy); text-decoration: none;
+    padding: 9px 0; border-bottom: 1px solid var(--border);
+    font-weight: 600; transition: color 0.2s;
+  }
+  .resource-link:last-child { border-bottom: none; }
+  .resource-link:hover { color: var(--amber); }
+  .resource-link span { font-size: 1rem; }
+
+  .newsletter-card {
+    background: var(--navy); border-radius: var(--radius); padding: 24px;
+  }
+  .newsletter-card h4 { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: white; margin-bottom: 8px; }
+  .newsletter-card p { font-size: 0.82rem; color: rgba(255,255,255,0.55); margin-bottom: 16px; line-height: 1.6; }
+  .newsletter-card input {
+    width: 100%; padding: 10px 14px; border-radius: 10px;
+    border: none; font-family: 'Nunito', sans-serif; font-size: 0.88rem;
+    margin-bottom: 10px; outline: none;
+  }
+  .newsletter-card button {
+    width: 100%; padding: 11px; border-radius: 10px;
+    background: var(--amber); color: white; border: none;
+    font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.9rem;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .newsletter-card button:hover { background: var(--amber-light); }
+
+  /* RELATED ARTICLES */
+  .related-section {
+    max-width: 1100px; margin: 0 auto; padding: 0 32px 64px;
+  }
+  .related-section h2 {
+    font-family: 'Lora', serif; font-size: 1.5rem; font-weight: 700;
+    color: var(--navy); margin-bottom: 24px;
+  }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card {
+    background: white; border-radius: var(--radius); padding: 22px;
+    border: 1px solid var(--border); text-decoration: none;
+    transition: all 0.2s; display: block;
+  }
+  .related-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(28,43,74,0.1); }
+  .related-tag { font-size: 0.72rem; font-weight: 800; color: var(--amber); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .related-card h3 { font-family: 'Lora', serif; font-size: 0.98rem; font-weight: 700; color: var(--navy); line-height: 1.4; margin-bottom: 8px; }
+  .related-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
+
+  /* FOOTER */
+  footer { background: var(--navy); padding: 32px; text-align: center; }
+  footer p { color: rgba(255,255,255,0.4); font-size: 0.82rem; }
+  footer a { color: var(--amber-light); text-decoration: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px) {
+    .article-layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .related-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Grand<span>Family</span> Guides</a>
+  <a href="index.html" class="nav-back">← Back to all resources</a>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-inner">
+    <div class="article-tag">📋 Essential Guide</div>
+    <h1>The Complete New Kinship Caregiver Checklist: Your First 30 Days</h1>
+    <p>Just became responsible for a grandchild? You're not alone — and you don't have to figure this out by yourself. This step-by-step checklist walks you through everything you need to do in the first 30 days, in the right order.</p>
+    <div class="article-meta">
+      <div class="meta-item">🕐 12 min read</div>
+      <div class="meta-item">📅 Updated May 2026</div>
+      <div class="meta-item">✅ 20 actionable steps</div>
+      <div class="meta-item">🗺️ All 50 states</div>
+    </div>
+  </div>
+</div>
+
+<!-- LAYOUT -->
+<div class="article-layout">
+
+  <!-- ARTICLE BODY -->
+  <article class="article-body">
+
+    <div class="intro-box">
+      <p>"One day you're a grandparent. The next day you're a parent again — often with no warning, no preparation, and no idea where to start. This checklist exists because you deserve a clear path forward."</p>
+    </div>
+
+    <p>Every year, hundreds of thousands of grandparents across America find themselves suddenly responsible for raising a grandchild. Maybe there was a family crisis. Maybe the call came in the middle of the night. Whatever brought you here, the feeling is often the same: overwhelmed, uncertain, and unsure what to do first.</p>
+
+    <p>The good news is that there is a clear path forward — and there is significant help available. Most grandparent caregivers qualify for financial assistance, healthcare coverage, school enrollment rights, and legal protections they don't know exist. This checklist makes sure you don't miss any of it.</p>
+
+    <div class="info-box warning">
+      <div class="info-box-label">⚠️ Important</div>
+      <p>This guide covers the most common situations. Every family's circumstances are different. Where legal decisions are involved, always consult with a licensed attorney in your state — many offer free consultations for kinship caregivers.</p>
+    </div>
+
+    <h2 id="week1">Week 1: Immediate Steps (Days 1–7)</h2>
+    <p>The first week is about safety, stability, and getting the basics in place. Don't try to do everything at once — focus on these urgent items first.</p>
+
+    <!-- PHASE 1 -->
+    <div class="phase-header">
+      <div class="phase-num">1</div>
+      <div>
+        <div class="phase-title">Legal & Safety — Do These First</div>
+        <div class="phase-subtitle">Days 1–3 · Urgent priority</div>
+      </div>
+    </div>
+    <div class="checklist-group" id="group1">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Get a notarized Power of Attorney or Caregiver Authorization</div>
+          <div class="check-desc">This is the single most important document you can have immediately. It allows you to make medical and school decisions without going to court. A notary public can be found at most banks for free. Download a template from your state's government website.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Secure the child's vital documents</div>
+          <div class="check-desc">Gather: birth certificate, Social Security card, immunization records, passport (if any), and any existing medical records. Store these in a safe place. If documents are missing, contact your county's vital records office to request replacements.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Contact your local Kinship Navigator program</div>
+          <div class="check-desc">Every state has a Kinship Navigator — a caseworker specifically trained to help grandparent caregivers access benefits. They know every program available in your county and can walk you through applications. This single call can unlock thousands of dollars in assistance.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Make sure the child is physically safe and has their basic needs met</div>
+          <div class="check-desc">Food, clothing, a safe place to sleep, and access to any medications they take regularly. If you need emergency food assistance, contact your local food bank — most have no income requirements for emergency situations.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+    </div>
+
+    <!-- PHASE 2 -->
+    <div class="phase-header">
+      <div class="phase-num">2</div>
+      <div>
+        <div class="phase-title">School Enrollment</div>
+        <div class="phase-subtitle">Days 3–7 · Do not wait on this</div>
+      </div>
+    </div>
+    <div class="checklist-group" id="group2">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Know your rights under the McKinney-Vento Act</div>
+          <div class="check-desc">Federal law gives grandchildren living with grandparents the right to enroll in school immediately — even without a birth certificate, proof of address, or legal guardianship papers. Schools cannot legally turn you away. If they try, ask to speak with the district's McKinney-Vento liaison.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Contact the school district and enroll the child</div>
+          <div class="check-desc">Bring whatever documents you have — your Power of Attorney, the child's immunization records if available, and a photo ID. The school must enroll the child within a reasonable time. Ask about free breakfast and lunch programs at the same time.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Ask about special education evaluations if needed</div>
+          <div class="check-desc">If your grandchild has learning challenges, behavioral concerns, or developmental delays, request a special education evaluation in writing. Schools are legally required to respond within 60 days. Early identification means better support and more resources.</div>
+        </div>
+        <div class="check-tag tag-soon">This week</div>
+      </div>
+    </div>
+
+    <h2 id="week2">Week 2: Healthcare & Financial Aid (Days 8–14)</h2>
+    <p>Once your grandchild is safe and in school, turn your attention to healthcare coverage and financial assistance. Many grandparents are shocked by how much help is available once they know where to look.</p>
+
+    <!-- PHASE 3 -->
+    <div class="phase-header">
+      <div class="phase-num">3</div>
+      <div>
+        <div class="phase-title">Healthcare Coverage</div>
+        <div class="phase-subtitle">Days 8–10 · Critical for the child's wellbeing</div>
+      </div>
+    </div>
+    <div class="checklist-group" id="group3">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Apply for Medicaid or CHIP for your grandchild</div>
+          <div class="check-desc">Most grandchildren in kinship care qualify for Medicaid or the Children's Health Insurance Program (CHIP) regardless of the grandparent's income. Apply online at healthcare.gov or through your state's Medicaid office. Coverage can be retroactive up to 3 months.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Add the child to your employer health insurance if applicable</div>
+          <div class="check-desc">If you have employer health insurance, becoming a grandchild's caregiver often qualifies as a "life event" that allows you to add them outside of open enrollment. Contact your HR department within 30 days of the change in custody — this window can close.</div>
+        </div>
+        <div class="check-tag tag-soon">This week</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Schedule an initial pediatric health visit</div>
+          <div class="check-desc">Get a baseline health assessment, update immunizations, and screen for any untreated medical or dental issues. If you don't yet have a pediatrician, community health centers and federally qualified health centers (FQHCs) accept Medicaid and often have sliding-scale fees.</div>
+        </div>
+        <div class="check-tag tag-soon">This week</div>
+      </div>
+    </div>
+
+    <!-- PHASE 4 -->
+    <div class="phase-header">
+      <div class="phase-num">4</div>
+      <div>
+        <div class="phase-title">Financial Assistance</div>
+        <div class="phase-subtitle">Days 10–14 · Don't leave money on the table</div>
+      </div>
+    </div>
+    <div class="checklist-group" id="group4">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Apply for TANF (Temporary Assistance for Needy Families)</div>
+          <div class="check-desc">You can apply for a child-only TANF grant on behalf of your grandchild — your own income does not count toward eligibility. This provides monthly cash assistance. Contact your local Department of Social Services or apply online through your state's benefits portal.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Ask about your state's Kinship Care Stipend</div>
+          <div class="check-desc">Many states offer monthly stipends specifically for grandparents and relatives raising children outside the foster care system. Amounts range from $200 to $900 per month depending on your state and the child's needs. Ask your Kinship Navigator about this specifically.</div>
+        </div>
+        <div class="check-tag tag-urgent">Urgent</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Apply for SNAP (food assistance) for the child</div>
+          <div class="check-desc">Even if you don't qualify for SNAP yourself, you can apply for the child as a separate household member. Apply at your local Department of Social Services or online. Processing typically takes 30 days, but emergency SNAP can be issued within 7 days in urgent situations.</div>
+        </div>
+        <div class="check-tag tag-soon">This week</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Claim the Child Tax Credit on your taxes</div>
+          <div class="check-desc">If you provide more than half of the child's financial support and they live with you, you likely qualify for the Child Tax Credit — worth up to $2,000 per child. You may also qualify as Head of Household, which significantly lowers your tax rate. Consult a tax professional or use a free VITA tax prep service.</div>
+        </div>
+        <div class="check-tag tag-soon">Tax season</div>
+      </div>
+    </div>
+
+    <h2 id="week3">Weeks 3–4: Legal & Long-Term Planning</h2>
+    <p>By the third week, immediate needs should be stabilized. Now is the time to think about the bigger legal picture and build a support system for the long haul.</p>
+
+    <!-- PHASE 5 -->
+    <div class="phase-header">
+      <div class="phase-num">5</div>
+      <div>
+        <div class="phase-title">Legal Protection & Planning</div>
+        <div class="phase-subtitle">Weeks 3–4 · Protect yourself and the child</div>
+      </div>
+    </div>
+    <div class="checklist-group" id="group5">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Consult with a kinship care attorney about guardianship options</div>
+          <div class="check-desc">A Power of Attorney is temporary. Legal guardianship or kinship guardianship gives you more permanent decision-making authority and unlocks additional benefits. Many areas have free legal aid for kinship caregivers — ask your Kinship Navigator for a referral.</div>
+        </div>
+        <div class="check-tag tag-soon">Within a month</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Understand the difference between guardianship, custody, and adoption</div>
+          <div class="check-desc">Each has very different legal implications, costs, and effects on benefits. Guardianship is usually the fastest and most affordable path. Adoption permanently severs parental rights. Custody arrangements vary widely. Read our full guide on this topic before making any decision.</div>
+        </div>
+        <div class="check-tag tag-soon">Within a month</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Update your will and estate planning documents</div>
+          <div class="check-desc">If something happens to you, who cares for your grandchild? Make sure your will names a guardian and that your estate plan reflects your new family situation. This is especially important if you are the sole caregiver.</div>
+        </div>
+        <div class="check-tag tag-ongoing">Ongoing</div>
+      </div>
+    </div>
+
+    <!-- PHASE 6 -->
+    <div class="phase-header">
+      <div class="phase-num">6</div>
+      <div>
+        <div class="phase-title">Support for You & the Child</div>
+        <div class="phase-subtitle">Ongoing · You cannot pour from an empty cup</div>
+      </div>
+    </div>
+    <div class="checklist-group" id="group6">
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Find a local or online grandparent caregiver support group</div>
+          <div class="check-desc">Connecting with other grandparents in the same situation is one of the most powerful things you can do. They know local resources, understand what you're going through, and can provide practical and emotional support. AARP has a nationwide support group network for grandparent caregivers.</div>
+        </div>
+        <div class="check-tag tag-ongoing">Ongoing</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Arrange respite care so you can take breaks</div>
+          <div class="check-desc">Respite care provides temporary relief — a few hours a week or a weekend — so you can rest, attend to your own health, or simply breathe. Many states offer funded respite care for kinship caregivers. Ask your Kinship Navigator about programs in your area.</div>
+        </div>
+        <div class="check-tag tag-ongoing">Ongoing</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Get mental health support for your grandchild</div>
+          <div class="check-desc">Children who come into kinship care have often experienced trauma — separation, instability, loss, or abuse. A trauma-informed therapist can make an enormous difference in their adjustment and long-term wellbeing. Ask the school counselor for referrals, or search the Psychology Today therapist finder filtered by "children" and "trauma."</div>
+        </div>
+        <div class="check-tag tag-soon">Within a month</div>
+      </div>
+      <div class="checklist-item" onclick="toggleCheck(this)">
+        <div class="check-box"><span class="check-mark">✓</span></div>
+        <div class="check-content">
+          <div class="check-title">Take care of your own health too</div>
+          <div class="check-desc">You cannot be there for your grandchild if you run yourself into the ground. Schedule your own medical checkups, get enough sleep, and don't be afraid to ask for help. Caregiving is hard. Acknowledging that is not weakness — it's wisdom.</div>
+        </div>
+        <div class="check-tag tag-ongoing">Always</div>
+      </div>
+    </div>
+
+    <div class="info-box tip">
+      <div class="info-box-label">💡 Pro Tip</div>
+      <p>Print this checklist and keep it somewhere visible. Check off items as you complete them — research shows that the act of checking off completed tasks reduces stress and keeps you moving forward even on hard days.</p>
+    </div>
+
+    <h2 id="help">You Don't Have to Do This Alone</h2>
+    <p>The most important thing to know is that there is a nationwide network of people whose entire job is to help families exactly like yours. Kinship Navigators, legal aid attorneys, school liaisons, and support groups exist in every state precisely because grandparent caregiving is common — and because these families deserve real support.</p>
+
+    <p>Use the resources on this site to find state-specific help, connect with a Kinship Navigator, and access free guides on every topic covered in this checklist. You stepped up for your grandchild when they needed you most. Now let us help you get everything you're entitled to.</p>
+
+    <div class="info-box important">
+      <div class="info-box-label">📞 Get Help Now</div>
+      <p>Call the <strong>Eldercare Locator at 1-800-677-1116</strong> (free, M–F 9am–8pm ET) to be connected with your local Area Agency on Aging, which can direct you to kinship support resources in your specific county.</p>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>Your Progress</span>
+        <span id="progress-text">0 of 21 done</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-note">Check off items as you complete them</div>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>📋 In This Guide</h4>
+      <a href="#week1" class="toc-link">Week 1: Immediate Steps</a>
+      <a href="#week2" class="toc-link">Week 2: Healthcare & Financial Aid</a>
+      <a href="#week3" class="toc-link">Weeks 3–4: Legal Planning</a>
+      <a href="#help" class="toc-link">Getting Additional Help</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>🔗 Key Resources</h4>
+      <a href="#" class="resource-link"><span>⚖️</span> Find Free Legal Aid</a>
+      <a href="#" class="resource-link"><span>💰</span> Benefits by State</a>
+      <a href="#" class="resource-link"><span>🎒</span> School Enrollment Rights</a>
+      <a href="#" class="resource-link"><span>🏥</span> Apply for Medicaid/CHIP</a>
+      <a href="#" class="resource-link"><span>🤝</span> Find a Kinship Navigator</a>
+      <a href="#" class="resource-link"><span>💬</span> Support Groups Near You</a>
+    </div>
+
+    <div class="newsletter-card">
+      <h4>🌻 GrandFamily Weekly</h4>
+      <p>One benefit, one tip, one story — every week. Free forever.</p>
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe Free</button>
+    </div>
+  </aside>
+
+</div>
+
+<!-- RELATED ARTICLES -->
+<div class="related-section">
+  <h2>Continue Reading</h2>
+  <div class="related-grid">
+    <a href="#" class="related-card">
+      <div class="related-tag">💰 Financial Aid</div>
+      <h3>$9,000+ You Might Be Missing: Benefits Every Kinship Grandparent Should Claim</h3>
+      <p>Most grandparents qualify for multiple overlapping benefits — but few claim all of them.</p>
+    </a>
+    <a href="#" class="related-card">
+      <div class="related-tag">⚖️ Legal</div>
+      <h3>Guardianship vs. Custody vs. Adoption: Which Is Right for Your Family?</h3>
+      <p>Each option has very different legal implications, costs, and effects on benefits.</p>
+    </a>
+    <a href="#" class="related-card">
+      <div class="related-tag">🎒 School</div>
+      <h3>How to Enroll Your Grandchild in School Even Without Legal Custody</h3>
+      <p>The McKinney-Vento Act gives your grandchild the right to enroll immediately.</p>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <a href="index.html">GrandFamily Guides</a> · grandfamilyguides.com · Not legal advice. Always consult a licensed attorney for your specific situation.</p>
+</footer>
+
+<script>
+  const ALL_ITEMS = document.querySelectorAll(".checklist-item[onclick]");
+  const TOTAL = ALL_ITEMS.length;
+
+  function toggleCheck(item) {
+    item.classList.toggle('checked');
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const checked = document.querySelectorAll('.checklist-item.checked').length;
+    const pct = Math.round((checked / TOTAL) * 100);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById("progress-text").textContent = checked + " of " + TOTAL + " done";
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("progress-text").textContent = "0 of " + TOTAL + " done";
+  });
+  }
+
+  // Newsletter
+  document.querySelector('.newsletter-card button').addEventListener('click', function() {
+    const email = document.querySelector('.newsletter-card input').value;
+    if (email && email.includes('@')) {
+      alert('You\'re subscribed! Welcome to GrandFamily Weekly.');
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  });
+</script>
+
+</body>
+</html>
